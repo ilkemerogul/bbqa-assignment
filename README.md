@@ -5,7 +5,7 @@ This repository includes assignment results.
 
 **Task_2** includes regression test automation results.
 
-**Note:** After cloning, open the project with IntelliJ Idea. Click on **"Terminal"**, type **"mvn clean install"** and press **Enter**.
+**Note:** After cloning, open the project with IntelliJ Idea. Click on **"Terminal"**, type **"mvn clean install"** and press **"Enter"**.
 
 **Note:** Please see the test automation results from; 
 
