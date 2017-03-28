@@ -1,8 +1,9 @@
 # bbqa-assignment
 This repository includes assignment results.
 
-Task_1 includes manual test case results of CRUD operations, edge cases, improvements.
-Task_2 includes regression test automation results.
+**Task_1** includes manual test case results of CRUD operations, edge cases, improvements.
+
+**Task_2** includes regression test automation results.
 
 **Note:** After cloning, open the project with IntelliJ Idea. Click on **"Terminal"**, type **"mvn clean install"** and press **Enter**.
 
