@@ -46,11 +46,11 @@
 |:-:| :----------: | :---------- |
 | SPCIM-001 | SPC-009 | User should be able to click on `Previous` and `Next` buttons very quickly, one after another, in order to navigate between pages very quickly. Currently, it's not working, on MAC OSX 10.12.1 Google Chrome Version 56.0.2924.87 (64-bit).
 | SPCIM-002 | SPC-011, SPC-012, SPC-013, SPC-014 | User should be able to use sorting function for all tabs. Sorting should be changed between A-Z, 0-9 & Z-A, 9-0 after clicking on the related tab title, such as; `Computer name`, `Introduced`, `Discontinued` and `Company` tabs.
-| SPCIM-007 | N/A | All these features and screens should be tested on **responsive web**. Currently, it's not supported and causes UI bugs.
-| SPCIM-008 | N/A | All these features and screens should be tested on different browsers, **cross-browser** testing should be performed, (Chrome, Firefox, Safari, IE, Edge, Opera). Currently, it's not supported as well.
-| SPCIM-009 | N/A | All these features and screens should be tested on different Operating Systems, **cross-platform** testing should be performed. Currently, it's not supported and causes dislocations on table list.
-| SPCIM-010 | N/A | All these features and screens should be tested on **mobile devices, tablets, etc.** Or, "Mobile Friendliness" test should be performed. Here are some results: <ul><li>**Page is not mobile friendly.**</li><li>Clickable elements too close together.</li><li>Viewport not set.</li><li>Text too small to read.</li></ul>
-| SPCIM-011 | N/A | All these features and screens' speed should be tested in order to evaluate the performance. Here are some results: <ul><li>PageSpeed Score: (A-93%)</li><li>Fully Loaded Time: (524ms)</li><li>Total Page Size: (53.9KB)</li><li>Requests: (3)</li></ul>
+| SPCIM-003 | N/A | All these features and screens should be tested on **responsive web**. Currently, it's not supported and causes UI bugs.
+| SPCIM-004 | N/A | All these features and screens should be tested on different browsers, **cross-browser** testing should be performed, (Chrome, Firefox, Safari, IE, Edge, Opera). Currently, it's not supported as well.
+| SPCIM-005 | N/A | All these features and screens should be tested on different Operating Systems, **cross-platform** testing should be performed. Currently, it's not supported and causes dislocations on table list.
+| SPCIM-006 | N/A | All these features and screens should be tested on **mobile devices, tablets, etc.** Or, "Mobile Friendliness" test should be performed. Here are some results: <ul><li>**Page is not mobile friendly.**</li><li>Clickable elements too close together.</li><li>Viewport not set.</li><li>Text too small to read.</li></ul>
+| SPCIM-007 | N/A | All these features and screens' speed should be tested in order to evaluate the performance. Here are some results: <ul><li>PageSpeed Score: (A-93%)</li><li>Fully Loaded Time: (524ms)</li><li>Total Page Size: (53.9KB)</li><li>Requests: (3)</li></ul>
 
 **Note: Test cases above could've been grouped and structured logically when using any test management tool such as TestRail.** 
 
