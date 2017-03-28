@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>API Demos</td>
+              <td>1</td>
+            <td>28 Mar 2017, 10:08</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">CantFindComputerStepDefs.iSearchNonExistentComputer()</td>
+              <td>1</td>
+              <td class="duration" data-value="1129739256">1s 129ms</td>
+              <td class="duration" data-value="1129739256">1s 129ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CantFindComputerStepDefs.informationMessageIsDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="1041284492">1s 041ms</td>
+              <td class="duration" data-value="1041284492">1s 041ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CantFindComputerStepDefs.thereIsNotAnySearchResults()</td>
+              <td>1</td>
+              <td class="duration" data-value="1013641373">1s 013ms</td>
+              <td class="duration" data-value="1013641373">1s 013ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DeleteComputerStepDefs.computerIsRemovedFromTheList()</td>
+              <td>1</td>
+              <td class="duration" data-value="1120309606">1s 120ms</td>
+              <td class="duration" data-value="1120309606">1s 120ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DeleteComputerStepDefs.iDeleteAnExistingComputer()</td>
+              <td>1</td>
+              <td class="duration" data-value="2060144380">2s 060ms</td>
+              <td class="duration" data-value="2060144380">2s 060ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DeleteComputerStepDefs.iSearchComputerWithNameMyComputerToBeDeleted()</td>
+              <td>1</td>
+              <td class="duration" data-value="1092624250">1s 092ms</td>
+              <td class="duration" data-value="1092624250">1s 092ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.startDriver()</td>
+              <td>14</td>
+              <td class="duration" data-value="34081480778">34s 081ms</td>
+              <td class="duration" data-value="2434391484">2s 434ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.stopDriver(Scenario)</td>
+              <td>14</td>
+              <td class="duration" data-value="1887056900">1s 887ms</td>
+              <td class="duration" data-value="134789778">134ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainPageNextStepDefs.iClickOnTheNextButtonAtTheBottomOfThePage()</td>
+              <td>2</td>
+              <td class="duration" data-value="2102777933">2s 102ms</td>
+              <td class="duration" data-value="1051388966">1s 051ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainPageNextStepDefs.iOpenComputerDatabaseWebsite()</td>
+              <td>14</td>
+              <td class="duration" data-value="25635601543">25s 635ms</td>
+              <td class="duration" data-value="1831114395">1s 831ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainPageNextStepDefs.nextPageShouldBeDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="1023489058">1s 023ms</td>
+              <td class="duration" data-value="1023489058">1s 023ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainPagePreviousStepDefs.iClickOnThePreviousButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="1036537198">1s 036ms</td>
+              <td class="duration" data-value="1036537198">1s 036ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainPagePreviousStepDefs.iLocatePreviousButtonAtTheBottomOfThePage()</td>
+              <td>1</td>
+              <td class="duration" data-value="1018315379">1s 018ms</td>
+              <td class="duration" data-value="1018315379">1s 018ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainPagePreviousStepDefs.previousPageShouldBeDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="1107237247">1s 107ms</td>
+              <td class="duration" data-value="1107237247">1s 107ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NewComputerPageStepDefs.iClickCreateThisComputer()</td>
+              <td>9</td>
+              <td class="duration" data-value="341348539">341ms</td>
+              <td class="duration" data-value="37927615">037ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NewComputerPageStepDefs.iClickToAddANewComputer()</td>
+              <td>9</td>
+              <td class="duration" data-value="9479571579">9s 479ms</td>
+              <td class="duration" data-value="1053285731">1s 053ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NewComputerPageStepDefs.iEnterValidComputerInformation()</td>
+              <td>1</td>
+              <td class="duration" data-value="1201870930">1s 201ms</td>
+              <td class="duration" data-value="1201870930">1s 201ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NewComputerPageStepDefs.iEnterValidComputerName()</td>
+              <td>8</td>
+              <td class="duration" data-value="8393017734">8s 393ms</td>
+              <td class="duration" data-value="1049127216">1s 049ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NewComputerPageStepDefs.iGotErrorForDateFields()</td>
+              <td>8</td>
+              <td class="duration" data-value="8353375378">8s 353ms</td>
+              <td class="duration" data-value="1044171922">1s 044ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NewComputerPageStepDefs.introducedAndDiscontinuedAsIntroducedAndDiscontinuedDates(String,String)</td>
+              <td>8</td>
+              <td class="duration" data-value="476444860">476ms</td>
+              <td class="duration" data-value="59555607">059ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NewComputerPageStepDefs.theComputerIsRegistered()</td>
+              <td>1</td>
+              <td class="duration" data-value="1121898943">1s 121ms</td>
+              <td class="duration" data-value="1121898943">1s 121ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NewComputerPageStepDefs.thereIsAComputerWithNameMyComputerToBeDeleted(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="6626764498">6s 626ms</td>
+              <td class="duration" data-value="3313382249">3s 313ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UpdateComputerStepDefs.computerInformationIsUpdated()</td>
+              <td>1</td>
+              <td class="duration" data-value="1109179830">1s 109ms</td>
+              <td class="duration" data-value="1109179830">1s 109ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UpdateComputerStepDefs.iSearchComputerWithNameMyComputer()</td>
+              <td>1</td>
+              <td class="duration" data-value="1090264434">1s 090ms</td>
+              <td class="duration" data-value="1090264434">1s 090ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UpdateComputerStepDefs.iUpdateExistingInformation()</td>
+              <td>1</td>
+              <td class="duration" data-value="2120156410">2s 120ms</td>
+              <td class="duration" data-value="2120156410">2s 120ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>25</td>
+            <td>103</td>
+            <td class="duration">1m 55s 664ms</td>
+            <td class="duration">1s 122ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

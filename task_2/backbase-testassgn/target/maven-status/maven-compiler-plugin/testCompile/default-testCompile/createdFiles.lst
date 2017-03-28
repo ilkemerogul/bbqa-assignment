@@ -1,0 +1,9 @@
+com/backbase/assignment/stepdefs/CantFindComputerStepDefs.class
+com/backbase/assignment/RunCukesTest.class
+com/backbase/assignment/stepdefs/MainPageNextStepDefs.class
+com/backbase/assignment/stepdefs/UpdateComputerStepDefs.class
+com/backbase/assignment/stepdefs/NewComputerPageStepDefs.class
+com/backbase/assignment/stepdefs/MainPagePreviousStepDefs.class
+com/backbase/assignment/stepdefs/DeleteComputerStepDefs.class
+com/backbase/assignment/stepdefs/Hooks$1.class
+com/backbase/assignment/stepdefs/Hooks.class

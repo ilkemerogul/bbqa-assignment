@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.backbase.assignment.RunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 116.351 sec - in com.backbase.assignment.RunCukesTest
